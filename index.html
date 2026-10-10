@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite | Bootstrap Lab</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">MyWebsite</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image Carousel -->
+    <section id="home">
+        <div
+            id="heroCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400"
+                        class="d-block w-100"
+                        alt="Modern office workspace"
+                        style="height: 450px; object-fit: cover;"
+                    >
+                    <div class="carousel-caption">
+                        <h2>Welcome to MyWebsite</h2>
+                        <p>Your gateway to modern web experiences.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400"
+                        class="d-block w-100"
+                        alt="Laptop and web development workspace"
+                        style="height: 450px; object-fit: cover;"
+                    >
+                    <div class="carousel-caption">
+                        <h2>Creative Solutions</h2>
+                        <p>We turn ideas into digital experiences.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400"
+                        class="d-block w-100"
+                        alt="People collaborating on a project"
+                        style="height: 450px; object-fit: cover;"
+                    >
+                    <div class="carousel-caption">
+                        <h2>Work Together</h2>
+                        <p>Building better digital experiences for everyone.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Previous Button -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous slide"
+            >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <!-- Next Button -->
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+                aria-label="Next slide"
+            >
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6">
+                <h2 class="fw-bold">About Us</h2>
+                <p>
+                    We specialize in creating modern, responsive
+                    websites that provide a simple and enjoyable
+                    experience for users.
+                </p>
+                <p>
+                    Our goal is to combine creativity and technology
+                    to build useful digital solutions.
+                </p>
+                <a href="#services" class="btn btn-primary">
+                    Explore Our Services
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900"
+                    class="img-fluid rounded shadow"
+                    alt="Bright and modern office"
+                >
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Our Services</h2>
+        <p class="text-center text-muted mb-5">
+            Discover the services we offer to help you succeed.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900"
+                        class="card-img-top"
+                        alt="Code displayed on a computer"
+                        style="height: 220px; object-fit: cover;"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">
+                            We build modern, responsive, and
+                            user-friendly websites for different needs.
+                        </p>
+                        <a href="#contact" class="btn btn-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=900"
+                        class="card-img-top"
+                        alt="User interface design on a screen"
+                        style="height: 220px; object-fit: cover;"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX Design</h5>
+                        <p class="card-text">
+                            We create clean and easy-to-use
+                            interfaces that improve user experience.
+                        </p>
+                        <a href="#contact" class="btn btn-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900"
+                        class="card-img-top"
+                        alt="Team working together"
+                        style="height: 220px; object-fit: cover;"
+                    >
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Solutions</h5>
+                        <p class="card-text">
+                            We help organize ideas and create
+                            practical solutions for digital projects.
+                        </p>
+                        <a href="#contact" class="btn btn-primary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Additional Bootstrap Component: Accordion -->
+    <section id="faq" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">
+            Frequently Asked Questions
+        </h2>
+
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#questionOne"
+                        aria-expanded="true"
+                        aria-controls="questionOne"
+                    >
+                        What services do you offer?
+                    </button>
+                </h3>
+
+                <div
+                    id="questionOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion"
+                >
+                    <div class="accordion-body">
+                        We offer web development, UI/UX design,
+                        and digital solutions.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#questionTwo"
+                        aria-expanded="false"
+                        aria-controls="questionTwo"
+                    >
+                        Are your websites mobile-friendly?
+                    </button>
+                </h3>
+
+                <div
+                    id="questionTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                >
+                    <div class="accordion-body">
+                        Yes. We use responsive design to make
+                        websites work on different screen sizes.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#questionThree"
+                        aria-expanded="false"
+                        aria-controls="questionThree"
+                    >
+                        How can I contact you?
+                    </button>
+                </h3>
+
+                <div
+                    id="questionThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                >
+                    <div class="accordion-body">
+                        You can reach us through the contact
+                        section of this webpage.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <h2 class="text-center fw-bold mb-3">
+                    Contact Us
+                </h2>
+                <p class="text-center text-muted mb-4">
+                    Have questions? We'd love to hear from you.
+                </p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            Your Name
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">
+                            Your Message
+                        </label>
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            rows="4"
+                            placeholder="Write your message here"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- About -->
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>
+                        We create innovative and responsive
+                        web experiences for everyone.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#home" class="text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-white">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-white">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a
+                        href="https://www.facebook.com/"
+                        class="text-white me-3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Facebook</a>
+
+                    <a
+                        href="https://www.instagram.com/"
+                        class="text-white me-3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Instagram</a>
+
+                    <a
+                        href="https://www.youtube.com/"
+                        class="text-white"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >YouTube</a>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <p class="text-center mb-0">
+                &copy; 2025 MyWebsite. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+</html>
